@@ -29,15 +29,31 @@ section{
 
 /* Typography */
 h1, h2, a, p {
-    font-family: 'Rubik' ,Helvetica, sans-serif;
+    font-family: 'Nunito' ,Helvetica, sans-serif;
+    margin-bottom: 25px;
+}
+
+h1{
+    font-size: 75px;
+}
+
+h2 {
+    font-size: 55px;
+}
+
+p{
+    font-size: 24px;
 }
 
 /* Links */
 
+a, li {
+    font-size: 13px;   
+}
+
 a {
     text-decoration: none;
     color: var(--colour-2);
-    font-size: 13px;
 }
 
 li {
@@ -47,14 +63,18 @@ li {
 
 /* Navigation Bar */
 /* .logo{
-    flex: 1;
-    float: left;
-    
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+    left: 0; 
+    margin-top: 25px;
+    margin: 25px 0 0 75px ;
 }
 
 .logo a {
     color: var(--colour-1);
-} */
+}  */
 
 .navbar{
     min-height: 70px;
@@ -96,7 +116,7 @@ li {
 }
 
 
-/* ABOUT PAGE */
+/* ABOUT section */
 
 #about{
     position: relative;
@@ -104,6 +124,14 @@ li {
     justify-content: center;
     align-items: center;
 }
+
+#text-two {
+    font-size: 75px;
+    font-weight: bold;
+}
+
+
+
 .wrapper{
     display: flex;
     justify-content: center;
@@ -132,6 +160,30 @@ li {
 }
 
 
+
+/* PROJECT section */
+.projects-container {
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 16px;
+    height: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.projects-container .col{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin-bottom: 16px;
+    padding: 16px;
+    
+}
+
+
+/* CONTACT section */
+
+
+
 /*Footer Section */
 footer {
     left: 0;
@@ -144,6 +196,8 @@ footer {
 
 #social-links{
     color: var(--colour-1);
+    padding-bottom: 5px;
+
 }
 
 #Copyright {
@@ -157,8 +211,24 @@ footer {
 
 
 /* ------------- Responsive Display ------------- */
+
 @media(max-width:768px){
 
+    h1{
+        font-size: 55px;
+    }
+    
+    h2 {
+        font-size: 45px;
+    }
+
+    #text-two {
+        font-size: 45px;
+        font-weight: bold;
+    }
+
+
+    /* NAVIGATION & HAMBURGER MENU */
     .hamburger{
         position: fixed;
         top: 0; right: 0;
@@ -178,7 +248,7 @@ footer {
 
     a{
         text-decoration: none;
-        color: var(--colour-2);
+        color: var(--colour-1);
     }
 
     .nav-menu{
@@ -190,6 +260,7 @@ footer {
         width: 100%;
         text-align: center;
         transition: 0.3s;
+        background-color: var(--colour-2);
     }
 
     .nav-item{
@@ -198,5 +269,23 @@ footer {
     .nav-menu.active{
         left: 0;
     }
+
+
+    /* ABOUT PAGE */
+    .wrapper{
+        flex-direction: column;
+    }
+    .image-container img{
+        width: 250px;
+        height: 250px;
+    }
+
+
+    /* PROJECTS */
+    .projects-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
 
 }
