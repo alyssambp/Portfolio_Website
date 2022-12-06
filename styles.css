@@ -62,11 +62,12 @@ a {
 
 li {
     list-style-type: none;
+    border: 1px white;
 }
 
 
 /* Navigation Bar */
-.logo{
+/* .logo{
     height: 100%;
     width: 100%;
     object-fit: contain; 
@@ -79,7 +80,7 @@ li {
 
 .logo a {
     color: var(--colour-1);
-} 
+}  */
 
 .navbar{
     min-height: 70px;
@@ -102,7 +103,7 @@ li {
     transition: 0.3s ease-out;
 }
 .nav-link:hover{
-    color: var(--colour-1);
+    color: #CDCDCD;
 }
 
 .hamburger{
@@ -117,7 +118,7 @@ li {
     margin: 5px auto;
     -webkit-transition: all 0.3x ease-in-out;
     transition: all 0.3x ease-in-out;
-    background-color: var(--colour-1);
+    background-color: var(--colour-5);
 }
 
 
@@ -128,15 +129,12 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
-#text-two {
-    font-size: 75px;
-    font-weight: bold;
+.about {
+    background-image: url("img/homepage.jpg");
+    background-size: cover;
 }
-
-
 
 .wrapper{
     display: flex;
@@ -165,6 +163,12 @@ li {
     font-size: 15px;
 }
 
+
+/* SKILLS Section */
+.skills{
+    justify-content: center;
+    text-align: center;
+}
 
 
 /* EXPERIENCE section */
@@ -253,6 +257,11 @@ li {
 
 
 /* PROJECT section */
+.projects{
+    background-color: #8dcdf4;
+    justify-content: center;
+    text-align: center;
+}
 
 .projects-container {
     display: grid;
@@ -268,14 +277,13 @@ li {
     box-shadow: 0 3px 10px var(--colour-3);
     margin-bottom: 16px;
     padding: 16px;  
+    background-color: #F8F8F8;
 }
 
 
 /* CONTACT section */
 .contact {
     position: relative;
-	width: 100%;
-	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -307,7 +315,7 @@ li {
 }
 
 .left{
-	background: url("img/teal_background.jpg") no-repeat center;
+	background: url("img/random.png") no-repeat center;
 	background-size: cover;
 	height: 100%;
 }
@@ -347,9 +355,7 @@ textarea{
 	transition: .3s;
 }
 
-/* .btn:hover{
-    background-color: #27ae60;
-} */
+
 
 .field:focus{
     border: 2px solid var(--colour-6);
@@ -402,7 +408,7 @@ footer {
         position: fixed;
         top: 0; right: 0;
         display: block;
-        padding: 5px 50px;
+        padding: 5px 25px;
     }
 
     .hamburger.active .bar:nth-child(2){
@@ -457,7 +463,7 @@ footer {
 
 
     /* EXPERIENCE */
-    .container:before {
+    /* .container:before {
         left: 8px;
         width: 2px;
     }
@@ -472,7 +478,7 @@ footer {
     .timeline-block-left {
         float: none;
         direction: ltr;
-    }
+    } */
 
 
     /* PROJECTS */
