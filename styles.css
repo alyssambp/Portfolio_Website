@@ -26,11 +26,14 @@ section{
     --colour-1: #212121;
     --colour-2: rgba(153,153,153,.7);
     --colour-3:  rgb(0 0 0 / 0.2);
+    --colour-4: #367588; /*Teal blue*/
+    --colour-5: #F5F5F5; /*White Smoke*/
+    --colour-6: #1F70C1;
 }
 
 /* Typography */
 h1, h2, a, p {
-    font-family: 'Nunito' ,Helvetica, sans-serif;
+    font-family: 'Lato' ,Helvetica, sans-serif;
     margin-bottom: 25px;
 }
 
@@ -164,6 +167,89 @@ li {
 
 
 
+/* EXPERIENCE section */
+/* .container {
+    width: 80%;
+    padding: 50px 0;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+}
+ 
+.container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    width: 2px;
+    height: 100%;
+    background: var(--colour-5);
+    z-index: 1
+}
+ 
+.timeline-block {
+    width: -webkit-calc(50% + 8px);
+    width: -moz-calc(50% + 8px);
+    width: calc(50% + 8px);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    clear: both;
+}
+ 
+.timeline-block-right {
+    float: right;
+}
+ 
+.timeline-block-left {
+    float: left;
+    direction: rtl;
+}
+ 
+.timeline-block-left p {
+    text-align: left;
+}
+ 
+.marker {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid var(--colour-5);
+    background: var(--colour-6);
+    margin-top: 10px;
+    z-index: 9999;
+}
+ 
+.timeline-content {
+    width: 95%;
+    padding: 0 15px;
+    color: var(--colour-1);
+}
+ 
+.timeline-content h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 500;
+}
+ 
+.timeline-content span {
+    font-size: 15px;
+}
+ 
+.timeline-content p, .timeline-content li  {
+    font-size: 14px;
+    line-height: 1.5em;
+    word-spacing: 1px;
+    color: var(--colour-1);
+} */
+
 
 
 /* PROJECT section */
@@ -186,6 +272,89 @@ li {
 
 
 /* CONTACT section */
+.contact {
+    position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+}
+
+.contact::after{
+    content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	/* background: url("img/teal_background.jpg") no-repeat center; */
+	background-size: cover;
+	filter: blur(50px);
+	z-index: -1;
+}
+
+.contact-box{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px var(--colour-3);
+}
+
+.left{
+	background: url("img/teal_background.jpg") no-repeat center;
+	background-size: cover;
+	height: 100%;
+}
+
+.right{
+	padding: 25px 40px;
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: var(--colour-6);
+	color: var(--colour-5);
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+/* .btn:hover{
+    background-color: #27ae60;
+} */
+
+.field:focus{
+    border: 2px solid var(--colour-6);
+    background-color: var(--colour-5);
+}
 
 
 
@@ -196,7 +365,7 @@ footer {
     width: 100%;
     position: auto;
     text-align: center;
-    padding: 15px 0;
+    padding: 5px 0;
 }
 
 
@@ -215,17 +384,17 @@ footer {
 @media(max-width:768px){
 
     h1{
-        font-size: 55px;
+        font-size: 45px;
     }
     
     h2 {
-        font-size: 45px;
+        font-size: 35px;
     }
 
-    #text-two {
-        font-size: 45px;
-        font-weight: bold;
+    p{
+        font-size: 18px;
     }
+
 
 
     /* NAVIGATION & HAMBURGER MENU */
@@ -233,7 +402,7 @@ footer {
         position: fixed;
         top: 0; right: 0;
         display: block;
-        /* padding: 5px 25px; */
+        padding: 5px 50px;
     }
 
     .hamburger.active .bar:nth-child(2){
@@ -248,7 +417,8 @@ footer {
 
     a{
         text-decoration: none;
-        color: var(--colour-1);
+        /* color: var(--colour-1); */
+        color: var(--colour-5);
     }
 
     .nav-menu{
@@ -260,7 +430,8 @@ footer {
         width: 100%;
         text-align: center;
         transition: 0.3s;
-        background-color: var(--colour-2);
+        /* background-color: var(--colour-2); */
+        background-color: var(--colour-6);
     }
 
     .nav-item{
@@ -285,10 +456,37 @@ footer {
     }
 
 
+    /* EXPERIENCE */
+    .container:before {
+        left: 8px;
+        width: 2px;
+    }
+    .timeline-block {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .timeline-block-right {
+        float: none;
+    }
+  
+    .timeline-block-left {
+        float: none;
+        direction: ltr;
+    }
+
+
     /* PROJECTS */
     .projects-container{
         grid-template-columns: repeat(1, 1fr);
     }
+
+    /* CONTACT */
+    .contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
 
 
 
