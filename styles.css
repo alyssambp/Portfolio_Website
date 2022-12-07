@@ -190,10 +190,9 @@ li {
 
 .experience p {
     vertical-align: baseline;
+    text-align: left;
 }
 
-
-/* Wide column */
 .column-1 {
   width: 90%;
   height: auto;
