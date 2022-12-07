@@ -23,24 +23,25 @@ section{
 
 :root {
     --main-background-color: #F8F8F8;
-    --colour-1: #212121;
-    --colour-2: rgba(153,153,153,.7);
-    --colour-3:  rgb(0 0 0 / 0.2);
-    --colour-4: #367588; /*Teal blue*/
-    --colour-5: #F5F5F5; /*White Smoke*/
-    --colour-6: #1F70C1;
+    --accent-background-colour: #8dcdf4;
+    --font-colour-1: rgba(0,0,0,0.45) ;
+    --font-colour-2:  #F5F5F5;
+    --box-shadow:  rgb(0 0 0 / 0.2);
+    --colour-1: #F5F5F5; /*White Smoke*/
+    --colour-2: #1F70C1;
+    --colour-3: #ddd;
 }
 
 /* Typography */
 h1, h2, a, p {
     font-family: 'Lato' ,Helvetica, sans-serif;
     margin-bottom: 25px;
-    color: rgba(0,0,0,0.45);
+    color: var(--font-colour-1);
 }
 
 h1{
     font-size: 75px;
-    color: #F5F5F5;
+    color: var(--font-colour-2);
 }
 
 h2 {
@@ -95,7 +96,7 @@ li {
     transition: 0.3s ease-out;
 }
 .nav-link:hover{
-    color: #CDCDCD;
+    color: var(--font-colour-2);
 }
 
 .hamburger{
@@ -110,8 +111,7 @@ li {
     margin: 5px auto;
     -webkit-transition: all 0.3x ease-in-out;
     transition: all 0.3x ease-in-out;
-    /* background-color: var(--colour-5); */
-    background-color: rgba(0,0,0,0.45);
+    background-color: var(--font-colour-1);
 }
 
 
@@ -184,7 +184,39 @@ li {
 
 
 /* EXPERIENCE section */
+.experience {
+    text-align: center;
+}
 
+.experience p {
+    vertical-align: baseline;
+}
+
+
+/* Wide column */
+.column-1 {
+  width: 90%;
+  height: auto;
+  padding-top:50px;
+  padding-left:50px;
+  padding-bottom:50px;
+  margin:auto;
+  margin-bottom:50px;
+  margin-top: 75px;
+  background-color: var(--colour-1);
+}
+
+/* Table formatting */
+.table-style {
+  width:100%;
+  border-spacing: 24px;
+}
+
+tr, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid var(--colour-3); 
+}
   
 
 
@@ -192,7 +224,7 @@ li {
 
 /* PROJECT section */
 .projects{
-    background-color: #8dcdf4;
+    background-color: var(--accent-background-colour);
     justify-content: center;
     text-align: center;
 }
@@ -209,10 +241,10 @@ li {
 }
 
 .projects-container .col{
-    box-shadow: 0 3px 10px var(--colour-3);
+    box-shadow: 0 3px 10px var(--box-shadow);
     margin-bottom: 16px;
     padding: 16px;  
-    background-color: #F8F8F8;
+    background-color: var(--colour-1);
 }
 
 
@@ -245,8 +277,8 @@ li {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	background-color: #fff;
-	box-shadow: 0px 0px 19px 5px var(--colour-3);
+	background-color: var(--main-background-color);
+	box-shadow: 0px 0px 19px 5px var(--box-shadow);
 }
 
 .left{
@@ -281,8 +313,8 @@ textarea{
 .btn{
 	width: 100%;
 	padding: 0.5rem 1rem;
-	background-color: var(--colour-6);
-	color: var(--colour-5);
+	background-color: var(--colour-2);
+	color: var(--colour-1);
 	font-size: 1.1rem;
 	border: none;
 	outline: none;
@@ -293,8 +325,8 @@ textarea{
 
 
 .field:focus{
-    border: 2px solid var(--colour-6);
-    background-color: var(--colour-5);
+    border: 2px solid var(--colour-2);
+    background-color: var(--colour-1);
 }
 
 
@@ -357,8 +389,7 @@ footer {
 
     a{
         text-decoration: none;
-        /* color: var(--colour-1); */
-        color: var(--colour-5);
+        color: var(--colour-1);
     }
 
     .nav-menu{
@@ -370,8 +401,7 @@ footer {
         width: 100%;
         text-align: center;
         transition: 0.3s;
-        /* background-color: var(--colour-2); */
-        background-color: var(--colour-6);
+        background-color: var(--colour-2);
     }
 
     .nav-item{
