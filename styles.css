@@ -138,7 +138,6 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 .image-container img {
     width: 300px;
@@ -228,6 +227,10 @@ tr, td {
     text-align: center;
 }
 
+.projects h2 {
+    color: var(--main-background-color);
+}
+
 
 .projects-container {
     display: grid;
@@ -263,7 +266,6 @@ tr, td {
 	height: 100%;
 	left: 0;
 	top: 0;
-	/* background: url("img/teal_background.jpg") no-repeat center; */
 	background-size: cover;
 	filter: blur(50px);
 	z-index: -1;
@@ -351,6 +353,9 @@ footer {
 
 
 /* ------------- Responsive Display ------------- */
+@media only screen and (max-device-width: 480px) {
+    
+}
 
 @media(max-width:768px){
 
@@ -420,8 +425,8 @@ footer {
         flex-direction: column;
     }
     .image-container img{
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
     }
 
     /* SKILLS */
@@ -436,25 +441,17 @@ footer {
     }
 
     /* EXPERIENCE */
-    .timeline {
-        width: 800px;
-        margin: 0 auto;
-        margin-top: 20px;
+    /* This part needs improving! */
+    .table-style{
+        width: 100%;
+        border-collapse: collapse;
     }
-    
-    .direction-l {
-        position: relative;
-        width: 380px;
-        float: left;
-        text-align: right;
-    }
-    
-    .direction-r {
-        position: relative;
-        width: 380px;
-        float: right;
+
+    td{
+        padding-right: 10px;
         text-align: left;
     }
+
 
 
     /* PROJECTS */
