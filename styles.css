@@ -134,7 +134,8 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 70px 40px;
+    /* padding: 70px 40px; */
+    padding: 70px 120px;
 }
 .image-container{
     flex: 1;
