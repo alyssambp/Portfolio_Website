@@ -48,12 +48,14 @@ h2 {
     font-size: 55px;
 }
 
-.skills h2, .experience h2, .contact h2{
-    color: var(--font-colour-2);
+.skills h2, .experience h2, .contact h2, .skills p, .experience p{
+    color: #264766;
 }
 
 p{
     font-size: 24px;
+    line-height: 32px;   /* within paragraph */
+    margin-bottom: 30px; /* between paragraphs */
 }
 
 /* Links */
@@ -205,31 +207,11 @@ li {
 .experience p {
     vertical-align: baseline;
     text-align: left;
+    margin: 10px;
 }
 
-/* .column-1 {
-  width: 90%;
-  height: auto;
-  padding-top:50px;
-  padding-left:50px;
-  padding-bottom:50px;
-  margin:auto;
-  margin-bottom:50px;
-  margin-top: 75px;
-  background-color: var(--colour-1);
-} */
 
 /* Table formatting */
-/* .table-style {
-  width:100%;
-  border-spacing: 24px;
-}
-
-tr, td {
-    padding: 8px;
-    text-align: left;
-    border-bottom: 1px solid var(--colour-3); 
-} */
 table {
     border: 1px solid #ccc;
     border-collapse: collapse;
@@ -273,7 +255,7 @@ table th {
 }
 
 .projects h2 {
-    color: var(--main-background-color);
+    color: var(--font-colour-1);
 }
 
 
@@ -389,6 +371,7 @@ footer {
 
 #Copyright {
     font-size: 15px;
+    color: #264766;
 }
 
 
@@ -414,6 +397,8 @@ footer {
 
     p{
         font-size: 18px;
+        line-height: 22px;   /* within paragraph */
+        margin-bottom: 30px; /* between paragraphs */
     }
 
 
@@ -486,17 +471,6 @@ footer {
     }
 
     /* EXPERIENCE */
-    /* This part needs improving! */
-    /* .table-style{
-        width: 100%;
-        border-collapse: collapse;
-    }
-
-    td{
-        padding-right: 10px;
-        text-align: left;
-    } */
-
     /* Table formatting */
     table {
         border: 0;
