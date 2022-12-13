@@ -24,8 +24,9 @@ section{
 :root {
     --main-background-color: #F8F8F8;
     --accent-background-colour: #8dcdf4;
-    --font-colour-1: rgba(0,0,0,0.45) ;
-    --font-colour-2:  #F5F5F5;
+    /* --font-colour-1: rgba(0,0,0,0.45) ; */
+    --font-colour-1: white ;
+    --font-colour-2:  #386D9D;
     --box-shadow:  rgb(0 0 0 / 0.2);
     --colour-1: #F5F5F5; /*White Smoke*/
     --colour-2: #1F70C1;
@@ -41,11 +42,14 @@ h1, h2, a, p {
 
 h1{
     font-size: 75px;
-    color: var(--font-colour-2);
 }
 
 h2 {
     font-size: 55px;
+}
+
+.skills h2, .experience h2, .contact h2{
+    color: var(--font-colour-2);
 }
 
 p{
@@ -59,7 +63,6 @@ a, li {
 
 a {
     text-decoration: none;
-    color: rgba(0,0,0,0.45);
     font-weight: bolder;
 }
 
@@ -111,7 +114,7 @@ li {
     margin: 5px auto;
     -webkit-transition: all 0.3x ease-in-out;
     transition: all 0.3x ease-in-out;
-    background-color: var(--font-colour-1);
+    background-color: #1572B6;
 }
 
 
@@ -143,11 +146,11 @@ li {
     width: 300px;
     height: 300px;
     margin: 20px;
-    border-radius: 10px;
+    border-radius: 50%;
 }
 
 
-.text-container{
+.text-container {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -155,6 +158,17 @@ li {
     flex-direction: column;
     font-size: 15px;
     text-align: left;
+}
+
+#social-links a{
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    color: white;
 }
 
 
