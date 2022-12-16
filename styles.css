@@ -169,7 +169,7 @@ li {
   text-align: left;
 }
 
-#social-links a {
+/* #social-links a {
   padding: 20px;
   font-size: 30px;
   width: 30px;
@@ -177,8 +177,13 @@ li {
   text-decoration: none;
   margin: 5px 2px;
   border-radius: 50%;
-  color: white;
-}
+  color:#264766;
+} */
+
+
+
+
+
 
 /* SKILLS Section */
 .skills {
@@ -408,6 +413,20 @@ footer {
   color: #264766;
 }
 
+#social-links a {
+  list-style: none;
+  text-decoration:none;
+  /* display:inline-block;   */
+  float:right;
+  position: relative; 
+  color: #264766;
+  font-size: 25px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
 /* ------------- Responsive Display ------------- */
 @media (max-width: 768px) {
   h1 {
@@ -556,5 +575,19 @@ footer {
 
   .right {
     width: 300px;
+  }
+
+
+  #social-links a {
+    list-style: none;
+    text-decoration:none;
+    display:inline-block;
+    position: relative; 
+    color: #264766;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
   }
 }
